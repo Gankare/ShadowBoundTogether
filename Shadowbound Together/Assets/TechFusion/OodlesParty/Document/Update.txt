@@ -1,0 +1,24 @@
+v1.2.2
+1. Changed character object picking and attacking to an event-driven approach. This way, specific listeners can handle logic for different game modes.
+2. Replaced the character model.
+3. Updated the demo scene model.
+4. Fixed an issue with the character generation tool not adding NetworkPlayer for networked characters.
+
+v1.2.1
+1.Split the original project into three parts:
+	a. Oodles Engine: Contains the core functionality of the physical characters.
+	b. Oodles Network: Involves the network synchronization of physical characters and scene objects.
+	c. Oodles Party: Encompasses game logic.
+2.Add a start menu and a single-player game scene.
+3.Add the 'EngineSetup' script to programmatically set up the physics detection filtering between layers, eliminating the dependency on project settings.
+4.Modify the ground detection method in CharacterMovement to use raycasting instead.
+5.Place Mirror into the ThirdParty folder.
+
+v1.1.1
+1.Fixed the issue where Player_Team occasionally got its feet stuck under the ground upon entering the scene.
+2.Modified the collision bodies generated for hands and feet in the Character Create Tool to spheres.
+
+v1.1.0
+1.The tool to create physical characters with one click from humanoid animation models has been added.
+2.Changed the rotation drive mode of the character's ConfigurableJoint from slerp to X and YZ.
+3.Added dust particle effects at the feet.
